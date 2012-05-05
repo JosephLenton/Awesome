@@ -1,5 +1,5 @@
 
-:- ensure_loaded( '../awesome/loading' ).
+:- ensure_loaded( '../src/awesome/loading' ).
 
 /*
 locate( controller, 'app/controllers' ).

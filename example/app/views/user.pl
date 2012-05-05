@@ -1,5 +1,5 @@
 
-:- use_module( '../awesome/template' ).
+:- use_module( '../src/awesome/template' ).
 
 template view_index( User ) :-
   user @ (
