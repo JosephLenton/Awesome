@@ -1,14 +1,16 @@
 
-:- use_module( '../src/awesome/template' ).
+:- use_module( '../src/awesome/write/html' ).
 
-template view_index( User ) :-
+view( index, User ) :-
   user @ (
-    title @ 'hey there user!'
+    title @ 'hey there user!',
     p( 'Welcome back!' )
   ).
 
-template user_not_found :-
+view( user_not_found ) :-
   not_found @ (
     h1( 'the given user was not found' ),
     p( 'Tried searching, but to no avail' )
   ).
+
+:- view( user_not_found ).

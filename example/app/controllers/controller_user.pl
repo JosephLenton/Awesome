@@ -9,6 +9,7 @@ index( ID ) :-
   view( user, User ).
 
 index( _ ) :-
+  write( '### user not found!' ),
   view( user_not_found ).
 
 index :-
