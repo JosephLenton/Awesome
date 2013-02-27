@@ -14,10 +14,6 @@
     op( 999, xfy, css   ),
     op( 999, xfy, tag   ),
 
-    op( 999, xfy, '=>'  ),
-
-    '=>'/2,
-
     '@?'/1,
     '@?'/2,
     '@'/1,
@@ -44,19 +40,13 @@
       h5/1
 ]).
 
+:- use_module( '../util' ).
+
 /**
  * When true, this will try not to uglify the output too much.
  * No guarantees, it's just a hint in the right direction.
  */
 pretty_print( true ).
-
-/**
- * Used for expressing mappings for HTML attributes.
- * 
- * For example:
- *    class => skybrush_show
- */
-=>( _Type, _Contents ).
 
 /**
  * This is the same as using the 'css' operator.
