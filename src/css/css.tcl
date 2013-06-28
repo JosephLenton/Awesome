@@ -61,7 +61,7 @@ proc ::css::sheetStr {rules} {
 proc ::css::list {} {
     variable CSS
 
-    set names {}
+    set names [list]
     foreach { sheetName rules } { array get CSS } {
         lappend $names $sheetName 
     }
